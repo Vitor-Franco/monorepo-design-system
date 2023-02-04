@@ -1,0 +1,45 @@
+
+### Projetos
+
+
+#### Todos os projetos
+
+* Adicionamos o typescript em todos os projetos
+* tsup -> utilizado para compilar arquivos typescript
+  * tsup é preferível pois compila o arquivo tanto para EcmaScript quanto para CommonJS.
+  * criar um arquivo de definição de tipagens, arquivo que auxilia nas tipagens.
+  * Mais performático
+
+#### Packages
+1. Adicionamos um <i>package.json</i> geral, para que possamos englobar os sub-projetos
+1.1. `private: true` - pacote não é publicavel no npm
+1.2. `workspaces: ['packages/*']` - onde estarão meus sub-repositórios do monorepo
+1. adicionamos ao pacote 'react', a `devDependencies: [{ @travessia-ui/tokens: '*' }]` do sub-repositório 'tokens' em qualquer versão. 
+2.1. Após isso, ao rodar o `npm i` conseguimos visualizar a pasta node_modules no módulo externo do pacote 'react'. 
+
+
+##### Tokens
+1. Para o projeto do token exportem seus recursos, precisamos indicar no <i>package.json</i> os seguintes itens: 
+1.1 `main: dist/index.js` -> Arquivo principal de entrada.
+1.2 `module: dist/index.mjs` -> para o uso EcmaScriptModules.
+1.3 `types: dist/index.d.ts` -> exclusivamente para definição de tipos.
+
+##### React
+1. Para o projeto do token exportem seus recursos, precisamos indicar no <i>package.json</i> os seguintes itens: 
+1.1 `main: dist/index.js` -> Arquivo principal de entrada.
+1.2 `module: dist/index.mjs` -> para o uso EcmaScriptModules.
+1.3 `types: dist/index.d.ts` -> exclusivamente para definição de tipos.
+
+
+##### TsConfig
+Utilizado para reunir as configurações de typescript de todos os projetos
+
+1. Após criar as configurações, adicionamos as `devDependencies` em cada sub-repo.
+1.1 E adicionamos em cada sub-repo um <i>tsconfig.json</i> extendendo o tsConfig.
+
+
+#### EslintConfig
+Utilizado para reunir as configurações de ESLINT para todos os projetos
+
+1. Após instalar as dependencias do ESLINT. Adicionamos o pacote nos outros sub-repo.
+1. Adicionamos o arquivo de configuração do eslint em cada sub-repo e adicionamos a extensão do módulo EslintConfig
