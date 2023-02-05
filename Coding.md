@@ -1,3 +1,4 @@
+1. Utilizar versão do Node 16.17.1
 
 ### Projetos
 
@@ -45,3 +46,6 @@ Utilizado para reunir as configurações de ESLINT para todos os projetos
 1. Após instalar as dependencias do ESLINT. Adicionamos o pacote nos outros sub-repo.
 1. Adicionamos o arquivo de configuração do eslint em cada sub-repo e adicionamos a extensão do módulo EslintConfig
 1. Adiciona o script `lint` em cada um dos sub-repo.
+
+#### Docs
+1. Iniciamos um projeto do storybook `npx sb init --builder @storybook/builder-vite --type react --use-npm`
