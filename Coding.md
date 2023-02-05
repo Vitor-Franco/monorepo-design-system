@@ -29,6 +29,7 @@
 1.1 `main: dist/index.js` -> Arquivo principal de entrada.
 1.2 `module: dist/index.mjs` -> para o uso EcmaScriptModules.
 1.3 `types: dist/index.d.ts` -> exclusivamente para definição de tipos.
+1. Adicionamos aos scripts <code>Build</code> e <code>Dev</code> a flag `--external react`, para que na hora de compilar não se preocupar com a dependencia do React, pois essa vem de fora 'da aplicação hospedeira' do nosso pacote.
 
 
 ##### TsConfig

@@ -7,3 +7,7 @@ Justamente por se tratarem de itens globais, como os tokens, que envolvem as cor
 ### Tokens
 Fica num pacote a parte, por se tratar de um item global, agnóstico de tecnologia.
 
+### React
+* Adicionamos o pacote <code>React</code> no projeto, todavia os pacotes precisam ser instalados como `devDependencies: []`.
+  * Isso porque o usuário que utilizará nosso DesignSystem já terá o pacote React instalado nos seus arquivos, uma vez que estamos construindo os componentes para funcionarem com React.
+  * Também para diminiuir o peso do pacote.
