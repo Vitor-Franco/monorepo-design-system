@@ -1,3 +1,3 @@
-import { colors } from "@travessia-ui/tokens";
+import { colors } from '@travessia-ui/tokens'
 
-console.log(colors);
+console.log(colors)
