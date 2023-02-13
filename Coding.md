@@ -49,3 +49,7 @@ Utilizado para reunir as configurações de ESLINT para todos os projetos
 
 #### Docs
 1. Iniciamos um projeto do storybook `npx sb init --builder @storybook/builder-vite --type react --use-npm`
+
+
+
+MDX -> Markdown + JSx
