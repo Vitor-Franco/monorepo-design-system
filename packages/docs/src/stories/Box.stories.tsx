@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Box, BoxProps } from '@travessia-ui/react'
+import { Box, BoxProps, Text } from '@travessia-ui/react'
 
 // Tipagens padrão do Componente
 export default {
@@ -9,7 +9,7 @@ export default {
   args: {
     children: (
       <>
-        <span>Testando o elemento Box</span>
+        <Text>Testando o elemento Box</Text>
       </>
     ),
   },
