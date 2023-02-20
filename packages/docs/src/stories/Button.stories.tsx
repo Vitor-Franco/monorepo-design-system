@@ -3,7 +3,7 @@ import { Button, ButtonProps } from '@travessia-ui/react'
 
 // Tipagens padrão do Componente
 export default {
-  title: 'Button',
+  title: 'Form/Button',
   component: Button,
 
   args: {
