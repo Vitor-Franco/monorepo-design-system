@@ -26,9 +26,9 @@
   },
   "dependencies": {
     "@travessia-ui/eslint-config": "*",
-    "@travessia-ui/ts-config": "*",
     "@travessia-ui/react": "*",
     "@travessia-ui/tokens": "*",
+    "@travessia-ui/ts-config": "*",
     "polished": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
