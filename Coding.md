@@ -53,3 +53,18 @@ Utilizado para reunir as configurações de ESLINT para todos os projetos
 
 
 MDX -> Markdown + JSx
+
+### TurboRepo
+1. Utilizamos quando trabalhamos com monorepo.
+1.1. Executar scripts em todos os pacotes ao mesmo tempo
+1.2. Turbo - Ajuda a acelerar o build da aplicação, em resumo ele faz um cache local e altera apenas o necessário.
+
+#### Passo-a-passo
+- Dentro de um arquivo turbo.json.
+1. Adicionamos um script de dev no turboRepo e indicamos que ele não guarde cache.
+1. Adicionamos um $schema, para o nosso json de configuração ficar com autocomplete.
+- Adicionamos no `package.json` do D.S. um script `dev` para rodar o comando do turboRepo `turbo run dev`.
+- Adicionamos um script de `build`, no mesmo padrão acima.
+- Para configurar o script de build:
+1. Adicionamos `outputs`, para indicar as saídas do build dos projetos.
+1. Adicionamos `dependsOn`, para indicar que o build de algum dos projetos depende do build de outros projetos, ou seja, ele precisa primeiro executar os projetos que não tem dependência de outros builds.
