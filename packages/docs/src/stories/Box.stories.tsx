@@ -13,6 +13,14 @@ export default {
       </>
     ),
   },
+
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 } as Meta<BoxProps>
 
 // Variações do componente

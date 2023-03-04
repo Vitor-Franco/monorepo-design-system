@@ -10,6 +10,14 @@ export default {
     src: 'https://github.com/vitor-franco.png',
     alt: 'Vitor Franco',
   },
+
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
+  },
 } as Meta<AvatarProps>
 
 // Variações do componente
