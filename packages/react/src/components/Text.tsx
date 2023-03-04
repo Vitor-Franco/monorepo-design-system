@@ -33,3 +33,5 @@ export const Text = styled('p', {
 export interface TextProps extends React.ComponentProps<typeof Text> {
   as?: React.ElementType
 }
+
+Text.displayName = 'Text'

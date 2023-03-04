@@ -11,3 +11,5 @@ export const Box = styled('div', {
 export interface BoxProps extends ComponentProps<typeof Box> {
   as?: React.ElementType
 }
+
+Box.displayName = 'Box'

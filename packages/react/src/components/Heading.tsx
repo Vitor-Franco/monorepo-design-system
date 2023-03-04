@@ -28,3 +28,5 @@ export const Heading = styled('h2', {
 export interface HeadingProps extends React.ComponentProps<typeof Heading> {
   as?: React.ElementType
 }
+
+Heading.displayName = 'Heading'
