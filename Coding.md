@@ -68,3 +68,11 @@ MDX -> Markdown + JSx
 - Para configurar o script de build:
 1. Adicionamos `outputs`, para indicar as saídas do build dos projetos.
 1. Adicionamos `dependsOn`, para indicar que o build de algum dos projetos depende do build de outros projetos, ou seja, ele precisa primeiro executar os projetos que não tem dependência de outros builds.
+
+
+
+## Deploy
+
+npm run changeset - para gerar o changelog
+npm run version-packages - para gerar a versão dos pacotes
+npm run release - para publicar os pacotes no npm
